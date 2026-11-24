@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Linux System Information Tool
@@ -14,7 +13,9 @@ hostname
 
 echo ""
 echo "OPERATING SYSTEM:"
-grep PRETTY_NAME /etc/os-release
+# shellcheck disable=SC1091
+. /etc/os-release
+echo "$PRETTY_NAME"
 
 echo ""
 echo "KERNEL VERSION:"
