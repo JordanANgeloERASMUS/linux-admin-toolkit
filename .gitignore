@@ -1,0 +1,25 @@
+# Temporary files
+*.tmp
+*.bak
+
+# Log files
+*.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# SSH private keys
+id_ed25519
+id_rsa
+*.pem
+*.key
+
+# Editor settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
